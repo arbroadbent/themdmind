@@ -12,7 +12,7 @@ export default function DashboardPage() {
             {t('MDMind')}
           </span>
           <br />
-          {t('structured thinking for modern clinicians')}
+          {t('xxx')}
         </h1>
         <div className='my-6 px-20 text-center text-2xl text-text-secondary'>
           {t(
