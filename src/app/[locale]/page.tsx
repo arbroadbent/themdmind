@@ -9,7 +9,7 @@ export default function DashboardPage() {
         <h1 className='text-center text-7xl font-extrabold leading-tight'>
           {t('An')}{' '}
           <span className='bg-span-bg bg-clip-text text-transparent'>
-            {t('MDMind')}
+            {t('the MDMind')}
           </span>
           <br />
           {t('Mind of Medicine')}
