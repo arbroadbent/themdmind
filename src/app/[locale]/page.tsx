@@ -9,10 +9,10 @@ export default function DashboardPage() {
         <h1 className='text-center text-7xl font-extrabold leading-tight'>
           {t('An')}{' '}
           <span className='bg-span-bg bg-clip-text text-transparent'>
-            {t('Booster')}
+            {t('MDMind')}
           </span>
           <br />
-          {t('to_Your_NextJS_Apps')}
+          {t('Mind of Medicine')}
         </h1>
         <div className='my-6 px-20 text-center text-2xl text-text-secondary'>
           {t(
