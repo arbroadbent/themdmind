@@ -7,12 +7,12 @@ export default function DashboardPage() {
     <div>
       <section className='flex flex-col items-center justify-center py-24'>
         <h1 className='text-center text-7xl font-extrabold leading-tight'>
-          {t('An')}{' '}
+          {t('The')}{' '}
           <span className='bg-span-bg bg-clip-text text-transparent'>
-            {t('the MDMind')}
+            {t('MDMind')}
           </span>
           <br />
-          {t('Mind of Medicine')}
+          {t('structured thinking for modern clinicians')}
         </h1>
         <div className='my-6 px-20 text-center text-2xl text-text-secondary'>
           {t(
