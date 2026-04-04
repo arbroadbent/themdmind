@@ -3,15 +3,14 @@ export default function Hero() {
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-slate-50 to-white pt-20">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-          Clinical reasoning,{' '}
+          The{' '}
           <span className="bg-span-bg bg-clip-text text-transparent">
-            made visible.
+            MDMind
           </span>
         </h1>
         
         <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-          The MDMind helps clinicians organize and express their reasoning — with more clarity, 
-          less friction, and better alignment with how they already think.
+          Clinical reasoning, made visible.
         </p>
         
         <div className="flex gap-4 justify-center flex-wrap">
