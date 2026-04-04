@@ -1,45 +1,42 @@
 'use client'
-import { Link } from '@/src/navigation'
-import { useTranslations } from 'next-intl'
+import Link from 'next/link'
 import { FC } from 'react'
-import GithubIcon from '../../icons/github'
 import LogoIcon from '../../icons/logo'
-import LangSwitcher from './LangSwitcher'
-import ThemeSwitch from './ThemeSwitch'
+
 interface Props {
   locale: string
 }
+
 export const Header: FC<Props> = ({ locale }) => {
-  const t = useTranslations('')
   return (
-    <div className='mx-auto flex max-w-screen-2xl flex-row items-center justify-between p-5'>
-      <Link lang={locale} href='/'>
-        <div className='flex flex-row items-center'>
-          <div className='mb-2 h-14 w-14'>
-            <LogoIcon />
+    <header className='fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100'>
+      <div className='mx-auto flex max-w-screen-2xl flex-row items-center justify-between p-5'>
+        {/* Logo */}
+        <Link href='/'>
+          <div className='flex flex-row items-center'>
+            <div className='mb-2 h-14 w-14'>
+              <LogoIcon />
+            </div>
+            <strong className='mx-2 select-none text-xl'>The MDMind</strong>
           </div>
-          <strong className='mx-2 select-none'>Template</strong>
-        </div>
-      </Link>
-      <div className='flex flex-row items-center gap-3'>
-        <nav className='mr-10 inline-flex gap-5'>
-          <Link lang={locale} href={`/about`}>
-            {t('About')}
-          </Link>
-          <a href=''>{t('Support')}</a>
-          <a href=''>{t('Other')}</a>
+        </Link>
+
+        {/* Navigation */}
+        <nav className='flex flex-row items-center gap-8'>
+          <a href='#vision' className='text-gray-600 hover:text-gray-900 transition'>
+            Vision
+          </a>
+          <a href='#demos' className='text-gray-600 hover:text-gray-900 transition'>
+            Demos
+          </a>
+          <a href='#articles' className='text-gray-600 hover:text-gray-900 transition'>
+            Articles
+          </a>
+          <a href='#about' className='text-gray-600 hover:text-gray-900 transition'>
+            About
+          </a>
         </nav>
-        <ThemeSwitch />
-        <LangSwitcher />
-        <a
-          href='https://github.com/yahyaparvar/nextjs-template'
-          target='_blank'
-        >
-          <div className='size-8'>
-            <GithubIcon />
-          </div>
-        </a>
       </div>
-    </div>
+    </header>
   )
 }
