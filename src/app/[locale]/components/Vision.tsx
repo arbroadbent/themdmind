@@ -7,13 +7,13 @@ export default function Vision() {
         </h2>
         
         <p className="text-xl text-gray-600 mb-10 leading-relaxed">
-          The MDMind begins with documentation because that's where friction is visible. 
+          The MDMind begins with documentation because that&apos;s where friction is visible. 
           But the broader goal is clinician-AI collaboration that supports reasoning in real time.
         </p>
 
         <div className="bg-slate-50 rounded-lg p-8 border-l-4 border-slate-900">
           <p className="text-lg text-gray-700 italic">
-            "Notes are static. Clinical reasoning is dynamic. The MDMind is the bridge."
+            &quot;Notes are static. Clinical reasoning is dynamic. The MDMind is the bridge.&quot;
           </p>
         </div>
       </div>
