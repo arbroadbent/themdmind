@@ -14,12 +14,12 @@ export default function ShowDontTell() {
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-slate-50 rounded-lg p-6">
             <div className="text-sm font-semibold text-slate-500 mb-3 uppercase tracking-wide">
-              Clinician's Reasoning
+              Clinician&apos;s Reasoning
             </div>
             <div className="bg-white rounded border border-slate-200 p-4 text-gray-700 text-sm leading-relaxed">
-              <p className="mb-2">"72yo with chest pain, troponin negative x2, EKG unchanged from prior.</p>
-              <p className="mb-2">Thinking this is likely MSK given reproducible tenderness, but can't rule out ACS given age and history.</p>
-              <p>Going to do a stress test outpatient, follow up in 48 hours, return precautions given."</p>
+              <p className="mb-2">&quot;72yo with chest pain, troponin negative x2, EKG unchanged from prior.</p>
+              <p className="mb-2">Thinking this is likely MSK given reproducible tenderness, but can&apos;t rule out ACS given age and history.</p>
+              <p>Going to do a stress test outpatient, follow up in 48 hours, return precautions given.&quot;</p>
             </div>
           </div>
 
