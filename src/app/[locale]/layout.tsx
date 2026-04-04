@@ -43,21 +43,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body>
-        <ThemeProvider
-          enableSystem
-          attribute='class'
-          defaultTheme='light'
-          themes={[
-            'light',
-            'dark',
-            'instagram',
-            'facebook',
-            'discord',
-            'netflix',
-            'twilight',
-            'reddit'
-          ]}
-        >
+        <ThemeProvider attribute="class" defaultTheme="light" forcedTheme="light">
           <NextIntlClientProvider
             locale={locale}
             messages={messages as AbstractIntlMessages}
