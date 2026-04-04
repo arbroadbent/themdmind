@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gray-100 pt-20">
+    <section className="min-h-screen flex items-center justify-center bg-slate-100 pt-20">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
           The{' '}
