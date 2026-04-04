@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { Link } from '@/src/navigation'
 
 export default function Articles() {
   const articles = [
