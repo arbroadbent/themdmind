@@ -1,4 +1,3 @@
-import { Link } from '@/src/navigation'
 import { Footer } from './Footer'
 
 interface ArticleLayoutProps {
@@ -66,33 +65,33 @@ export default function ArticleLayout({
             <p className="text-text-secondary mb-4 italic">
               {nextArticle.teaser}
             </p>
-            <Link 
-              href={`/articles/${nextArticle.slug}`}
+            <a 
+              href={`/en/articles/${nextArticle.slug}`}
               className="text-secondary hover:underline font-medium"
             >
               Read: {nextArticle.title} →
-            </Link>
+            </a>
           </div>
         )}
 
         <div className="flex justify-between items-center pt-6 border-t border-gray-200">
           {prevArticle ? (
-            <Link 
-              href={`/articles/${prevArticle.slug}`}
+            <a 
+              href={`/en/articles/${prevArticle.slug}`}
               className="text-text-secondary hover:text-primary transition"
             >
               ← {prevArticle.title}
-            </Link>
+            </a>
           ) : (
             <div></div>
           )}
           
-          <Link 
-            href="/articles"
+          <a 
+            href="/en/articles"
             className="text-secondary hover:underline"
           >
             All Articles
-          </Link>
+          </a>
         </div>
       </nav>
 
