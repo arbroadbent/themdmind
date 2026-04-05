@@ -1,3 +1,4 @@
+import { Link } from '@/src/navigation'
 import { Footer } from './Footer'
 
 interface ArticleLayoutProps {
@@ -30,9 +31,7 @@ export default function ArticleLayout({
 
   return (
     <div className="pt-24">
-      {/* Article Header */}
       <header className="max-w-3xl mx-auto px-6 mb-12">
-        {/* Series Banner */}
         {isPartOfSeries && (
           <div className="mb-6 p-4 bg-background-secondary rounded-lg border-l-4 border-secondary">
             <p className="text-sm text-text-secondary">
@@ -43,12 +42,10 @@ export default function ArticleLayout({
           </div>
         )}
 
-        {/* Title */}
         <h1 className="text-4xl md:text-5xl font-bold text-primary leading-tight mb-4">
           {title}
         </h1>
 
-        {/* Subtitle */}
         {subtitle && (
           <p className="text-xl text-text-secondary">
             {subtitle}
@@ -56,14 +53,11 @@ export default function ArticleLayout({
         )}
       </header>
 
-      {/* Article Body */}
       <article className="max-w-3xl mx-auto px-6">
         {children}
       </article>
 
-      {/* Navigation Between Articles */}
       <nav className="max-w-3xl mx-auto px-6 mt-16 mb-12">
-        {/* Next Article Teaser (for series) */}
         {nextArticle && (
           <div className="p-6 bg-background-secondary rounded-lg mb-6">
             <p className="text-sm font-semibold text-secondary uppercase tracking-wide mb-2">
@@ -72,34 +66,33 @@ export default function ArticleLayout({
             <p className="text-text-secondary mb-4 italic">
               {nextArticle.teaser}
             </p>
-            <a 
-              href={nextArticle.slug}
+            <Link 
+              href={`/articles/${nextArticle.slug}`}
               className="text-secondary hover:underline font-medium"
             >
               Read: {nextArticle.title} →
-            </a>
+            </Link>
           </div>
         )}
 
-        {/* Prev/Next Links */}
         <div className="flex justify-between items-center pt-6 border-t border-gray-200">
           {prevArticle ? (
-            <a 
-              href={prevArticle.slug}
+            <Link 
+              href={`/articles/${prevArticle.slug}`}
               className="text-text-secondary hover:text-primary transition"
             >
               ← {prevArticle.title}
-            </a>
+            </Link>
           ) : (
             <div></div>
           )}
           
-          <a 
-            href="."
+          <Link 
+            href="/articles"
             className="text-secondary hover:underline"
           >
             All Articles
-          </a>
+          </Link>
         </div>
       </nav>
 
