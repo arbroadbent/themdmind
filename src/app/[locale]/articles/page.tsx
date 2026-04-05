@@ -1,4 +1,3 @@
-import { Link } from '@/src/navigation'
 import { Footer } from '../components/Footer'
 
 const seriesArticles = [
@@ -67,9 +66,9 @@ export default function ArticlesPage() {
 
           <div className="space-y-4">
             {seriesArticles.map((article) => (
-              <Link 
+              <a 
                 key={article.slug}
-                href={`/articles/${article.slug}`}
+                href={`/en/articles/${article.slug}`}
                 className="block p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg hover:border-gray-300 transition"
               >
                 <div className="flex items-start gap-4">
@@ -85,7 +84,7 @@ export default function ArticlesPage() {
                     </p>
                   </div>
                 </div>
-              </Link>
+              </a>
             ))}
           </div>
         </section>
@@ -97,9 +96,9 @@ export default function ArticlesPage() {
 
           <div className="space-y-4">
             {standaloneArticles.map((article) => (
-              <Link 
+              <a 
                 key={article.slug}
-                href={`/articles/${article.slug}`}
+                href={`/en/articles/${article.slug}`}
                 className="block p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg hover:border-gray-300 transition"
               >
                 <h3 className="text-lg font-semibold text-primary mb-1">
@@ -108,7 +107,7 @@ export default function ArticlesPage() {
                 <p className="text-text-secondary text-sm">
                   {article.description}
                 </p>
-              </Link>
+              </a>
             ))}
           </div>
         </section>
