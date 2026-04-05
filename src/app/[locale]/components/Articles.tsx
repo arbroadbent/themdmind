@@ -1,5 +1,3 @@
-import { Link } from '@/src/navigation'
-
 export default function Articles() {
   const articles = [
     {
@@ -36,9 +34,9 @@ export default function Articles() {
 
         <div className="grid md:grid-cols-3 gap-6">
           {articles.map((article, index) => (
-            <Link 
+            <a 
               key={index}
-              href={`/articles/${article.slug}`}
+              href={`/en/articles/${article.slug}`}
               className="bg-white rounded-lg p-6 border border-gray-200 hover:shadow-lg transition block"
             >
               <div className="text-xs font-semibold text-secondary mb-2 uppercase tracking-wide">
@@ -50,17 +48,17 @@ export default function Articles() {
               <p className="text-text-secondary text-sm">
                 {article.description}
               </p>
-            </Link>
+            </a>
           ))}
         </div>
 
         <div className="text-center mt-12">
-          <Link 
-            href="/articles"
+          <a 
+            href="/en/articles"
             className="text-secondary hover:underline font-medium"
           >
             View all articles →
-          </Link>
+          </a>
         </div>
       </div>
     </section>
