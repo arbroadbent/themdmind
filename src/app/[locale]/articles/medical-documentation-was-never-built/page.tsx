@@ -16,12 +16,7 @@ export default function Article2() {
         teaser: "If documentation misses the complexity of clinical reasoning, what should it actually capture?"
       }}
     >
-      <p className="text-xl text-text-secondary mb-8 italic">
-        Extends uncertainty into documentation. Names the structural problem.
-      </p>
-
-      <p>
-             <p className="mb-6">
+      <p className="mb-6">
         We are trained to practice medicine in uncertainty, but we are trained to document as if uncertainty doesn&apos;t exist. That tension has always been present. Most clinicians learn to live with it early—compress their thinking, smooth the edges, write something that reads cleanly. It becomes reflexive. You stop noticing the gap between how you thought and what you wrote.
       </p>
 
@@ -94,6 +89,7 @@ export default function Article2() {
       <p className="mb-6">
         We&apos;ve been forcing that fiction for years through manual documentation. AI just automates the distortion—faster, smoother, and at scale. If we want AI to actually help, we need to stop asking it to invent certainty. We need documentation that reflects how clinicians actually think.
       </p>
+
     </ArticleLayout>
   )
 }
