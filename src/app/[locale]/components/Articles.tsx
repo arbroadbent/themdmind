@@ -21,7 +21,7 @@ export default function Articles() {
   ]
 
   return (
-    <section id="articles" className="py-24 bg-background-secondary">
+    <section id="articles" className="py-36 bg-background-secondary">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-primary mb-4">
