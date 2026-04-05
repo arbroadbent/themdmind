@@ -16,11 +16,7 @@ export default function CommitmentPoints() {
         teaser: "The format itself may be the problem. What would documentation look like if it matched how we actually think?"
       }}
     >
-      <p className="text-xl text-text-secondary mb-8 italic">
-        Introduces framework. What actually matters—and what notes miss.
-      </p>
-
-            <p className="mb-6">
+      <p className="mb-6">
         Most of what happens during a clinical encounter is context. History, exam findings, test results, conversation, reassessment—all of it builds toward something, but most of it isn&apos;t the thing itself.
       </p>
 
@@ -111,6 +107,7 @@ export default function CommitmentPoints() {
       <p className="mb-6">
         If documentation is going to reflect how clinicians actually think—and if AI is going to help—it needs to start with what actually carries weight.
       </p>
+
     </ArticleLayout>
   )
 }
