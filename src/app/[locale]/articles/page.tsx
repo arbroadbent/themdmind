@@ -43,7 +43,7 @@ const standaloneArticles = [
 
 export default function ArticlesPage() {
   return (
-    <div className="pt-24">
+    <div className="pt-36">
       <div className="max-w-4xl mx-auto px-6">
         <header className="mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
