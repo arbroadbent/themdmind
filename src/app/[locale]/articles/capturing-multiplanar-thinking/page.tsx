@@ -11,16 +11,11 @@ export default function Article4() {
         slug: "commitment-points"
       }}
       nextArticle={{
-        title: "Faithful Documentation: A Different Model for AI in Medicine",
+        title: "The Moments That Matter: A Different Model for AI Use in Documentation",
         slug: "faithful-documentation",
         teaser: "If this is what documentation should reflect, what role should AI play in getting us there?"
       }}
     >
-      <p className="text-xl text-text-secondary mb-8 italic">
-        The mismatch. Linear format vs. multiplanar cognition.
-      </p>
-
-      <p>
       <p className="mb-6">
         Clinical cognition is multiplanar. It holds competing hypotheses simultaneously, revises probability as new information arrives, and tolerates unresolved uncertainty across multiple decision points at once.
       </p>
