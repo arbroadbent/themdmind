@@ -27,7 +27,7 @@ const seriesArticles = [
   },
   {
     part: 5,
-    title: "Faithful Documentation: A Different Model for AI in Medicine",
+    title: "The Moments That Matter: A Different Model for AI Use in Documentation",
     slug: "faithful-documentation",
     description: "The direction. What AI should actually do. Closes the arc.",
   },
