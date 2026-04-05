@@ -11,7 +11,7 @@ export const Header: FC<Props> = ({ locale }) => {
   return (
     <header className='fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100'>
       <div className='mx-auto flex max-w-screen-2xl flex-row items-center justify-between p-5'>
-        <Link href='/' lang={locale}>
+        <Link href='/' locale={locale}>
           <div className='flex flex-row items-center'>
             <div className='mb-2 h-14 w-14'>
               <LogoIcon />
@@ -27,7 +27,7 @@ export const Header: FC<Props> = ({ locale }) => {
           <a href='#demos' className='text-gray-600 hover:text-gray-900 transition'>
             Demos
           </a>
-          <Link href='/articles' lang={locale} className='text-gray-600 hover:text-gray-900 transition'>
+          <Link href='/articles' locale={locale} className='text-gray-600 hover:text-gray-900 transition'>
             Articles
           </Link>
           <a href='#about' className='text-gray-600 hover:text-gray-900 transition'>
