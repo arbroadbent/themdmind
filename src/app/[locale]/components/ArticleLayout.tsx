@@ -29,7 +29,7 @@ export default function ArticleLayout({
   const isPartOfSeries = seriesPart && seriesTotal
 
   return (
-    <div className="pt-24">
+    <div className="pt-36">
       <header className="max-w-3xl mx-auto px-6 mb-12">
         {isPartOfSeries && (
           <div className="mb-6 p-4 bg-background-secondary rounded-lg border-l-4 border-secondary">
